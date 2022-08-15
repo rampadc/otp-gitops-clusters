@@ -15,7 +15,7 @@ spec:
       key: 0e010d4c-3d3b-0989-ceef-f2a97ffb3b58
   - secretKey: openshiftPullSecret
     remoteRef:
-      key: c3822044-3fb0-8865-ac9f-abff19763d59
+      key: 988fb22a-4c72-c434-609d-6c5448e1f57a
   - secretKey: openshiftSSHPrivateKey
     remoteRef:
       key: 579f0dfb-1a65-087d-5710-8d7eca29c8b7
