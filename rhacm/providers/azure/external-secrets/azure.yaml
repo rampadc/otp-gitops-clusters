@@ -15,13 +15,13 @@ spec:
       key: ef8a9c51-6300-ff8a-2aa4-aef4c9d8b166 
   - secretKey: openshiftPullSecret
     remoteRef:
-      key: adc32372-cafe-0488-a9ab-6a971a6ca2d8
+      key: c3822044-3fb0-8865-ac9f-abff19763d59
   - secretKey: openshiftSSHPrivateKey
     remoteRef:
-      key: 91b5a6de-a9be-2b91-a3e8-2b09e3390bcb
+      key: 579f0dfb-1a65-087d-5710-8d7eca29c8b7
   - secretKey: openshiftSSHPublicKey
     remoteRef:
-      key: 2a4c460c-4443-3d29-ee43-18b21b9c6b3b
+      key: e54f376c-1d17-6e98-76dc-a9f4a6369716
   refreshInterval: 24h0m0s
   secretStoreRef:
     name: cluster

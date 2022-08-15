@@ -6,22 +6,22 @@ spec:
   data:
   - secretKey: awsAccessKey
     remoteRef:
-      key: 0d1d17a7-9d6b-a2b4-6b20-04d87f770fce 
+      key: 168c8d58-6e06-7c6c-9ee1-7d56a1a79567
   - secretKey: awsSecretKey
     remoteRef:
-      key: 57afa209-35b7-da90-5b92-9621cc27030c
+      key: c70378b1-2ebd-3d74-bbc5-bb34f9b83767
   - secretKey: awsBaseDomain
     remoteRef:
-      key: 48dcb7e2-fefe-fb2a-548d-8692d1680408 
+      key: 0e010d4c-3d3b-0989-ceef-f2a97ffb3b58
   - secretKey: openshiftPullSecret
     remoteRef:
-      key: adc32372-cafe-0488-a9ab-6a971a6ca2d8
+      key: c3822044-3fb0-8865-ac9f-abff19763d59
   - secretKey: openshiftSSHPrivateKey
     remoteRef:
-      key: 91b5a6de-a9be-2b91-a3e8-2b09e3390bcb
+      key: 579f0dfb-1a65-087d-5710-8d7eca29c8b7
   - secretKey: openshiftSSHPublicKey
     remoteRef:
-      key: 2a4c460c-4443-3d29-ee43-18b21b9c6b3b
+      key: e54f376c-1d17-6e98-76dc-a9f4a6369716
   refreshInterval: 24h0m0s
   secretStoreRef:
     name: cluster
