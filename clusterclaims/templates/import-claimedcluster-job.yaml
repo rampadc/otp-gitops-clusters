@@ -18,5 +18,7 @@ spec:
           value: {{ .Values.clusterClaimName }}
         - name: CLUSTER_CLAIM_NAMESPACE
           value: rhacm-clusterpools
+        - name: MANAGED_CLUSTER_SET
+          value: last-mile-gitops
       restartPolicy: OnFailure
   backoffLimit: 2
