@@ -10,7 +10,7 @@ spec:
     spec:
       containers:
       - name: import-claimed-cluster-post-install
-        image: quay.io/congxdev/otp-import-claimed-cluster:4.10
+        image: quay.io/congxdev/otp-import-claimed-cluster:latest
         imagePullPolicy: Always
         env:
         - name: CLUSTER_CLAIM_NAME
