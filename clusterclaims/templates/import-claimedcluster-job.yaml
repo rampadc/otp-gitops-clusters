@@ -1,0 +1,21 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  generateName: import-claimed-cluster-
+  annotations:
+    argocd.argoproj.io/hook: PostSync
+  namespace: rhacm-clusterpools
+spec:
+  template:
+    spec:
+      containers:
+      - name: import-claimed-cluster-post-install
+        image: quay.io/congxdev/otp-import-claimed-cluster:4.10
+        imagePullPolicy: Always
+        env:
+        - name: CLUSTER_CLAIM_NAME
+          value: {{ .Values.clusterClaimName }}
+        - name: CLUSTER_CLAIM_NAMESPACE
+          value: rhacm-clusterpools
+      restartPolicy: OnFailure
+  backoffLimit: 2
