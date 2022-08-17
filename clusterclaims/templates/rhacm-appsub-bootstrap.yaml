@@ -13,7 +13,7 @@ spec:
       kind: Subscription
   descriptor: {}
   selector:
-    matchLabels:
+    matchExpressions:
       - key: app
         operator: In
         values:
