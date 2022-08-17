@@ -14,7 +14,10 @@ spec:
   descriptor: {}
   selector:
     matchLabels:
-      app: bootstrap-{{ .Values.managedCluster.environment }}-{{ .Values.managedCluster.projectName }}
+      - key: app
+        operator: In
+        values:
+          - bootstrap-{{ .Values.managedCluster.environment }}-{{ .Values.managedCluster.projectName }}
 ---
 apiVersion: apps.open-cluster-management.io/v1
 kind: Channel
